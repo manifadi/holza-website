@@ -1,0 +1,73 @@
+:root{
+    padding: 0;
+    margin: 0;
+    --main-red: #FF4C29;
+    --black: #1a1616;
+    --white: #ebe8e8;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Chivo', sans-serif;
+}
+
+body{
+    background-color: var(--black);
+    color: var(--main-red);
+    scroll-behavior: smooth;
+}
+
+.hover-mouse:hover{
+    cursor: pointer;
+}
+
+.header{
+    padding: 4vh 8vw 0 8vw;
+    width: 84vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 6vh;
+    position: relative;
+}
+
+.header .back-button{
+    width: clamp(10px, 7vw, 30px);
+    height: clamp(10px, 7vw, 30px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2vw;
+}
+
+.header .back-button div{
+    width: 80%;
+    height: 18%;
+    border-radius: 4em;
+    background-color: var(--main-red);
+}
+
+.header .back-button div:first-child{
+    transform: translateY(-80%) rotate(-45deg);
+}
+
+.header .back-button div:last-child{
+    width: 57%;
+    transform: translate(40%, 130%) rotate(45deg);
+}
+
+.header img{
+    width: clamp(70px, 10vw, 160px);
+    object-fit: contain;
+}
+
+h1{
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 3vh;
+}
+
+.content{
+    padding: 0 8vw 3vh 8vw;
+}

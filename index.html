@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Holza | Offizielle Website</title>
+        <link rel="stylesheet" href="styles/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png">
+        <link rel="manifest" href="/site.webmanifest">
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="theme-color" content="#ffffff">
+
+        <!-- STYLE FOR SWIPER -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.min.css">
+    </head>
+    <body>
+        <img src="./assets/logos/logo_red_lowres.png" preload alt="picture" style="display: none">
+        <div id="preloader"></div>
+        <div class="slide-menu">
+            <ul>
+                <li class="hover-mouse" onclick="scrollToBottom(-1)">Home</li>
+                <li class="hover-mouse" onclick="scrollToBottom(0)">Live</li>
+                <li class="hover-mouse" onclick="scrollToBottom(1)">Musik</li>
+                <li class="hover-mouse" onclick="scrollToBottom(2)">Videos</li>
+                <li class="hover-mouse" onclick="scrollToBottom(3)">Ich</li>
+                <li class="hover-mouse" onclick="scrollToBottom(4)">Kontakt</li>
+            </ul>
+        </div>
+        <div class="socials">
+            <a href="https://youtu.be/1rVY1SlzHs0?si=qTlLwbv87WpFm-nX" id="youtube-icon"><img src="./assets/socials/youtube.png" alt="Social Media Icon Youtube" class="filter hover-mouse"></a>
+            <a href="https://www.facebook.com/p/Holza-100085100498084/"><img src="./assets/socials/facebook.png" alt="Social Media Icon Facebook" class="filter hover-mouse"></a>
+            <a href="https://www.instagram.com/holza.oida/"><img src="./assets/socials/instagram.png" alt="Social Media Icon Instagram" class="filter hover-mouse"></a>
+            <a href="https://www.tiktok.com/@holza.oida"><img src="./assets/socials/tiktok.png" alt="Social Media Icon Tiktok" class="filter hover-mouse"></a>
+            <a href="https://music.amazon.de/albums/B0CGXQLXBS"><img src="./assets/socials/amazonmusic.png" alt="Social Media Icon Amazon" class="filter hover-mouse"></a>
+            <a href="https://music.apple.com/at/album/grantig/1705038699?i=1705039067&l=en-GB"><img src="./assets/socials/applemusic.png" alt="Social Media Icon Apple Music" class="filter hover-mouse"></a>
+            <a href="https://open.spotify.com/album/7KaBxH7OOUR0IEtKASuk6C"><img src="./assets/socials/spotify.png" alt="Social Media Icon Spotify" class="filter hover-mouse"></a>
+        </div>
+
+        <div class="menu hover-mouse" onclick="slideMenu()">
+            <div class="menu-line-one"></div>
+            <div class="menu-line-two"></div>
+        </div>
+
+        <h1>
+            <img src="./assets/tv_and_gif/temp-tv-placeholder.png" alt="PNG Image of an old TV" class="tv" id="animated-gif">
+        </h1>
+
+        <div class="arrow-down">
+            <img src="./assets/arrow_down_png.png" alt="image of arrow down" onclick="scrollToBottom(0)" class="bounce-7 hover-mouse">
+        </div>
+
+        <div class="fit-content">
+            <div id="termine"></div>
+            <button class="show-me-more hover-mouse" onclick="writeDates()">ZEIG MIR MEHR!</button>
+        </div>
+        <div class="image-pause">
+            <img src="./assets/DSC00029_3.png" alt="Image of the band">
+        </div>
+
+        <!-- Todo: slideshow -->
+
+        <div class="fit-content">
+            <div class="slider">
+                <!-- MIDDLE ITEM -->
+                <div class="slider_item">
+                    <div class="ticket-flex covers">
+                        <div class="cover-image">
+                            <img src="./assets/covers/cover_kummowa.jpg" alt="cover of an album">
+                        </div>
+                        <h3>Kummowa - Album</h3>
+                        <a href="https://playat.link/Holza_KUMMOWA" class="hover-mouse">Anhören</a>
+                        <a href="https://www.mediamarkt.at/de/product/_holza-kummowa-cd-1958893.html" class="hover-mouse button-secondary">CD Kaufen</a>
+                    </div>
+                </div>
+                <!-- RIGHT ITEM -->
+                <div class="slider_item">
+                    <div class="ticket-flex covers">
+                        <div class="cover-image">
+                            <img src="./assets/covers/cover_grantig.jpg" alt="cover of an album">
+                        </div>
+                        <h3>Grantig - Single</h3>
+                        <a href="https://playat.link/Holza_Grantig" class="hover-mouse">Anhören</a>
+                        <a href="https://youtu.be/1rVY1SlzHs0" class="hover-mouse button-secondary">Musikvideo</a>
+                    </div>
+                </div>
+                <!-- LEFT ITEM -->
+                <div class="slider_item">
+                    <div class="ticket-flex covers">
+                        <div class="cover-image">
+                            <img src="./assets/covers/All_inclusive_Cover.jpg" alt="cover of an album">
+                        </div>
+                        <h3>All Inclusive - Single</h3>
+                        <a href="https://playat.link/Holza_Allinclusive" class="hover-mouse">Anhören</a>
+                        <a href="https://youtu.be/1vAen_ASXv4" class="hover-mouse button-secondary">Musikvideo</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="image-pause">
+            <img src="./assets/holza_zwischenbild_sticker.png" alt="Image with polaroids">
+        </div>
+
+        <div class="music-videos hover-mouse">
+            <div class="video-container active" onclick="changeVideoPreview(0)">
+                <div class="orange-overlay"></div>
+                <img src="./assets/covers/schreibaliad_wdb_video_cover.jpg" alt="music video preview">
+                <a href="https://youtu.be/MpMUUs23e_U?si=ViDWFWBT2lY2jMp3">
+                    <img src="./assets/socials/youtube.png" alt="play button for video">
+                </a>
+                <div>
+                    <p>Holza - Schreib a Liad (Live)</p>
+                </div>
+            </div>
+            <div class="video-container disabled" onclick="changeVideoPreview(1)">
+                <div class="orange-overlay"></div>
+                <img src="./assets/covers/grantig_video_cover.jpg" alt="music video preview">
+                <a href="https://youtu.be/1rVY1SlzHs0?si=1-H1J4dVwkt0PqAD">
+                    <img src="./assets/socials/youtube.png" alt="play button for video">
+                </a>
+                <div>
+                    <p>Holza - Grantig (Offizielles Video)</p>
+                </div>
+            </div>
+            <div class="video-container disabled" onclick="changeVideoPreview(2)">
+                <div class="orange-overlay"></div>
+                <img src="./assets/covers/akustik session.jpg" alt="music video preview">
+                <a href="https://youtu.be/MnRATerrwPc?si=VDnWwzLiayTJ_OSd">
+                    <img src="./assets/socials/youtube.png" alt="play button for video">
+                </a>
+                <div>
+                    <p>Holza - Akustik Session</p>
+                </div>
+            </div>
+        </div>
+		<div class="image-pause">
+            <img src="./assets/Holza_Studio_Floor_1.png" alt="Holza on studio floor">
+        </div>
+        <div class="fit-content flex-who">
+            <div class="who-am-i">
+                <h2>KURZ ZU MIR: </h2>
+              
+                <p>
+                    Ich liebe Musik und das Leben, das will ich dich mit meiner Musik spüren lassen. Aja und kleiner Tipp: Live is no vüüüüüü schöner!!
+                </p>
+
+                <p>
+                    Meine Eltern würden ca sowas über mich schreiben:
+                </p>
+
+                <p>
+                    Aufgewachsen am Kreuzberg in Payerbach am Bauernhof, spielte Musik schon immer eine große Rolle im Leben des 23-jährigen Niederösterreichers, der Gesundheits- und Krankenpflege studiert.
+                </p>
+
+                <p>
+                    Im zarten Alter von 6 Jahren startete er seinen musikalischen Werdegang mit der Steirischen Harmonika und nahm bald darauf auch nebenbei Gitarre- und Schlagzeug-, sowie in weiterer Folge auch Gesang- und Klavierunterricht.
+                    Nebenbei spielt Holza - bisher bekannt unter seinem bürgerlichen Namen Sebastian Holzer - in einigen Bands und durfte sich auch bereits bei diversen Wettbewerben über den ein oder anderen Sieg freuen.
+                </p>
+
+                <p>
+                    Zuletzt konnte er mit seiner Musikalität, seiner Ehrlichkeit und seinem Schmäh bei der diesjährigen Staffel von Starmania überzeugen und schaffte es bis ins Finale, wo er letztendlich den 3. Platz belegte.
+                    Für ihn vorerst unerwartet, aber dadurch einen großen Schritt näher, zu dem, was er sich immer gewünscht hat.
+                </p>
+
+                <p>
+                    Das Album „Kummowa“ soll die Weichen legen für alles was da von Holza jetzt noch kommt. Das Debütalbum steht und ein ordentliches Live-Set steht mindestens genauso.
+                    Holza ist durch und durch ein Musiker und lässt das seinem Livepublikum spüren, egal ob in total abgespeckter Form auf den Straßen oder in voller Besetzung auf den großen Bühnen.
+                    Aktuell ist er auf Tour, im Trio oder zu fünft.
+                </p>
+
+            </div>
+        </div>
+
+        <div class="fit-content contact">
+            <img src="./assets/LIFELOVING_CIRCLE.png" alt="Circle with letters and words" class="circle-letters rotating">
+            <div class="space-creator"></div>
+            <div class="book-me">
+                <h3>BOOK ME</h3>
+                <p>Oton-Agentur</p>
+                <p>Andreas Fuchshuber</p>
+                <p>kontakt@oton-agentur.at</p>
+            </div>
+            <button class="email-button hover-mouse" onclick="location.href='mailto:kontakt@oton-agentur.at'">
+                <img src="./assets/socials/email-icon.png" alt="icon of email symbol">
+            </button>
+        </div>
+
+        <div class="footer">
+            <img src="./assets/logos/logo_black.png" alt="Logo of the singer" onclick="bodyScrollToTop()" class="hover-mouse">
+            <div class="socials">
+                <a href="https://youtu.be/1rVY1SlzHs0?si=qTlLwbv87WpFm-nX" id="youtube-icon"><img src="./assets/socials/youtube.png" alt="Social Media Icon Youtube" class="filter hover-mouse"></a>
+                <a href="https://www.facebook.com/p/Holza-100085100498084/"><img src="./assets/socials/facebook.png" alt="Social Media Icon Facebook" class="filter hover-mouse"></a>
+                <a href="https://www.instagram.com/holza.oida/"><img src="./assets/socials/instagram.png" alt="Social Media Icon Instagram" class="filter hover-mouse"></a>
+                <a href="https://www.tiktok.com/@holza.oida"><img src="./assets/socials/tiktok.png" alt="Social Media Icon Tiktok" class="filter hover-mouse"></a>
+                <a href="https://music.amazon.de/albums/B0CGXQLXBS"><img src="./assets/socials/amazonmusic.png" alt="Social Media Icon Amazon" class="filter hover-mouse"></a>
+                <a href="https://music.apple.com/at/album/grantig/1705038699?i=1705039067&l=en-GB"><img src="./assets/socials/applemusic.png" alt="Social Media Icon Apple Music" class="filter hover-mouse"></a>
+                <a href="https://open.spotify.com/album/7KaBxH7OOUR0IEtKASuk6C"><img src="./assets/socials/spotify.png" alt="Social Media Icon Spotify" class="filter hover-mouse"></a>
+            </div>
+            <div>
+                <a href="datenschutz.html" class="hover-mouse">Datenschutz</a>
+                |
+                <a href="impresum.html" class="hover-mouse">Impressum</a>
+            </div>
+        </div>
+
+        <script>
+            /*                              *
+            * ANIMATION FOR OPENING SCREEN
+            *                               */
+           // Preload the lowres logo picture
+            document.body.classList.add("body-open-menu");
+            var loader = document.getElementById("preloader");
+            window.addEventListener("load", function(){
+                loader.style.display = "none";
+                document.body.classList.remove("body-open-menu");
+                waitUntilGifSwitch();
+            });
+
+        </script>
+        <script src="./javascript/fetch_dates.js"></script>
+        <script src="./javascript/animations.js"></script>
+        <script src="./javascript/scrollTo.js"></script>
+        <!-- SCRIPTS FOR SWIPER -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/min/tiny-slider.js"></script>
+        <script>
+            var slider = tns({
+                container : '.slider',
+                items: 1,
+                center: true,
+                loop: true,
+                swipeAngle: false,
+                speed: 400,
+                nav: false,
+                mouseDrag: true,
+                controlsPosition: "bottom",
+                controlsText: ["<", ">"],
+                "responsive": {
+                    "920": {
+                        items: 2
+                    },
+                    "1400": {
+                        items: 3
+                    }
+                },
+            })
+        </script>
+
+        <!--
+
+
+        -->
+    </body>
+</html>
