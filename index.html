@@ -17,8 +17,23 @@
         <meta name="msapplication-TileColor" content="#da532c">
         <meta name="theme-color" content="#ffffff">
 
-        <!-- STYLE FOR SWIPER -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.min.css">
+
+        <script>
+            !function(f,b,e,v,n,t,s)
+            {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+            n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+            if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+            n.queue=[];t=b.createElement(e);t.async=!0;
+            t.src=v;s=b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t,s)}(window, document,'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+            fbq('init', '818146260754677');
+            fbq('track', 'PageView');
+        </script>
+        <noscript><img height="1" width="1" style="display:none"
+            src="https://www.facebook.com/tr?id=818146260754677&ev=PageView&noscript=1"
+        /></noscript>
     </head>
     <body>
         <img src="./assets/logos/logo_red_lowres.png" preload alt="picture" style="display: none">
@@ -64,41 +79,36 @@
             <img src="./assets/DSC00029_3.png" alt="Image of the band">
         </div>
 
-        <!-- Todo: slideshow -->
-
         <div class="fit-content">
             <div class="slider">
-                <!-- MIDDLE ITEM -->
                 <div class="slider_item">
                     <div class="ticket-flex covers">
                         <div class="cover-image">
                             <img src="./assets/covers/cover_kummowa.jpg" alt="cover of an album">
                         </div>
                         <h3>Kummowa - Album</h3>
-                        <a href="https://playat.link/Holza_KUMMOWA" class="hover-mouse">Anhören</a>
-                        <a href="https://www.mediamarkt.at/de/product/_holza-kummowa-cd-1958893.html" class="hover-mouse button-secondary">CD Kaufen</a>
+                        <a href="https://playat.link/Holza_KUMMOWA" class="hover-mouse" onclick="fbq('track', 'ViewContent', {content_name: 'Stream Kummowa'});">Anhören</a>
+                        <a href="https://www.mediamarkt.at/de/product/_holza-kummowa-cd-1958893.html" class="hover-mouse button-secondary" onclick="fbq('track', 'InitiateCheckout', {content_name: 'Kauf CD Kummowa'});">CD Kaufen</a>
                     </div>
                 </div>
-                <!-- RIGHT ITEM -->
                 <div class="slider_item">
                     <div class="ticket-flex covers">
                         <div class="cover-image">
                             <img src="./assets/covers/cover_grantig.jpg" alt="cover of an album">
                         </div>
                         <h3>Grantig - Single</h3>
-                        <a href="https://playat.link/Holza_Grantig" class="hover-mouse">Anhören</a>
-                        <a href="https://youtu.be/1rVY1SlzHs0" class="hover-mouse button-secondary">Musikvideo</a>
+                         <a href="https://playat.link/Holza_Grantig" class="hover-mouse" onclick="fbq('track', 'ViewContent', {content_name: 'Stream Grantig'});">Anhören</a>
+                         <a href="https://youtu.be/1rVY1SlzHs0" class="hover-mouse button-secondary" onclick="fbq('track', 'ViewContent', {content_name: 'Video Grantig'});">Musikvideo</a>
                     </div>
                 </div>
-                <!-- LEFT ITEM -->
                 <div class="slider_item">
                     <div class="ticket-flex covers">
                         <div class="cover-image">
                             <img src="./assets/covers/All_inclusive_Cover.jpg" alt="cover of an album">
                         </div>
                         <h3>All Inclusive - Single</h3>
-                        <a href="https://playat.link/Holza_Allinclusive" class="hover-mouse">Anhören</a>
-                        <a href="https://youtu.be/1vAen_ASXv4" class="hover-mouse button-secondary">Musikvideo</a>
+                         <a href="https://playat.link/Holza_Allinclusive" class="hover-mouse" onclick="fbq('track', 'ViewContent', {content_name: 'Stream All Inclusive'});">Anhören</a>
+                         <a href="https://youtu.be/1vAen_ASXv4" class="hover-mouse button-secondary" onclick="fbq('track', 'ViewContent', {content_name: 'Video All Inclusive'});">Musikvideo</a>
                     </div>
                 </div>
             </div>
@@ -187,7 +197,7 @@
                 <p>Andreas Fuchshuber</p>
                 <p>kontakt@oton-agentur.at</p>
             </div>
-            <button class="email-button hover-mouse" onclick="location.href='mailto:kontakt@oton-agentur.at'">
+            <button class="email-button hover-mouse" onclick="fbq('track', 'Lead'); location.href='mailto:kontakt@oton-agentur.at'">
                 <img src="./assets/socials/email-icon.png" alt="icon of email symbol">
             </button>
         </div>
@@ -211,9 +221,9 @@
         </div>
 
         <script>
-            /*                              *
+            /* *
             * ANIMATION FOR OPENING SCREEN
-            *                               */
+            * */
            // Preload the lowres logo picture
             document.body.classList.add("body-open-menu");
             var loader = document.getElementById("preloader");
@@ -227,7 +237,6 @@
         <script src="./javascript/fetch_dates.js"></script>
         <script src="./javascript/animations.js"></script>
         <script src="./javascript/scrollTo.js"></script>
-        <!-- SCRIPTS FOR SWIPER -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/min/tiny-slider.js"></script>
         <script>
             var slider = tns({
@@ -252,9 +261,5 @@
             })
         </script>
 
-        <!--
-
-
-        -->
-    </body>
+        </body>
 </html>
