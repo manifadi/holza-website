@@ -1,0 +1,56 @@
+{
+    "bio": {
+        "headline": "KURZ ZU MIR:",
+        "text_intro": "Ich liebe Musik und das Leben, das will ich dich mit meiner Musik spüren lassen. Aja und kleiner Tipp: Live is no vüüüüüü schöner!!",
+        "text_parents": "Meine Eltern würden ca sowas über mich schreiben:",
+        "text_full": "Aufgewachsen am Kreuzberg in Payerbach am Bauernhof, spielte Musik schon immer eine große Rolle im Leben des 23-jährigen Niederösterreichers, der Gesundheits- und Krankenpflege studiert.\n\nIm zarten Alter von 6 Jahren startete er seinen musikalischen Werdegang mit der Steirischen Harmonika und nahm bald darauf auch nebenbei Gitarre- und Schlagzeug-, sowie in weiterer Folge auch Gesang- und Klavierunterricht. Nebenbei spielt Holza - bisher bekannt unter seinem bürgerlichen Namen Sebastian Holzer - in einigen Bands und durfte sich auch bereits bei diversen Wettbewerben über den ein oder anderen Sieg freuen.\n\nZuletzt konnte er mit seiner Musikalität, seiner Ehrlichkeit und seinem Schmäh bei der diesjährigen Staffel von Starmania überzeugen und schaffte es bis ins Finale, wo er letztendlich den 3. Platz belegte. Für ihn vorerst unerwartet, aber dadurch einen großen Schritt näher, zu dem, was er sich immer gewünscht hat.\n\nDas Album „Kummowa“ soll die Weichen legen für alles was da von Holza jetzt noch kommt. Das Debütalbum steht und ein ordentliches Live-Set steht mindestens genauso. Holza ist durch und durch ein Musiker und lässt das seinem Livepublikum spüren, egal ob in total abgespeckter Form auf den Straßen oder in voller Besetzung auf den großen Bühnen. Aktuell ist er auf Tour, im Trio oder zu fünft."
+    },
+    "contact": {
+        "email": "kontakt@oton-agentur.at",
+        "agentur": "Oton-Agentur",
+        "person": "Andreas Fuchshuber"
+    },
+    "slider": [
+        {
+            "title": "Kummowa - Album",
+            "image": "cover_kummowa.jpg",
+            "link_main": "https://playat.link/Holza_KUMMOWA",
+            "text_main": "Anhören",
+            "link_sec": "https://www.mediamarkt.at/de/product/_holza-kummowa-cd-1958893.html",
+            "text_sec": "CD Kaufen"
+        },
+        {
+            "title": "Grantig - Single",
+            "image": "cover_grantig.jpg",
+            "link_main": "https://playat.link/Holza_Grantig",
+            "text_main": "Anhören",
+            "link_sec": "https://youtu.be/1rVY1SlzHs0",
+            "text_sec": "Musikvideo"
+        },
+        {
+            "title": "All Inclusive - Single",
+            "image": "All_inclusive_Cover.jpg",
+            "link_main": "https://playat.link/Holza_Allinclusive",
+            "text_main": "Anhören",
+            "link_sec": "https://youtu.be/1vAen_ASXv4",
+            "text_sec": "Musikvideo"
+        }
+    ],
+    "videos": [
+        {
+            "title": "Holza - Schreib a Liad (Live)",
+            "image": "schreibaliad_wdb_video_cover.jpg",
+            "link": "https://youtu.be/MpMUUs23e_U?si=ViDWFWBT2lY2jMp3"
+        },
+        {
+            "title": "Holza - Grantig (Offizielles Video)",
+            "image": "grantig_video_cover.jpg",
+            "link": "https://youtu.be/1rVY1SlzHs0?si=1-H1J4dVwkt0PqAD"
+        },
+        {
+            "title": "Holza - Akustik Session",
+            "image": "akustik session.jpg",
+            "link": "https://youtu.be/MnRATerrwPc?si=VDnWwzLiayTJ_OSd"
+        }
+    ]
+}
