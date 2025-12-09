@@ -1,6 +1,6 @@
 <?php
 session_start();
-$password = "holza"; // DEIN PASSWORT
+$password = "Holza!Live2025#GitarrenSolo_Sicher";
 $json_file = 'content.json';
 
 // --- LOGIN LOGIK ---

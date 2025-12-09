@@ -1,0 +1,10 @@
+RewriteEngine On
+
+# Leite /admin auf admin.php um
+RewriteRule ^admin/?$ admin.php [L]
+
+# Sicherheit: Verhindere, dass jemand die content.json direkt im Browser öffnet/liest
+<Files "content.json">
+    Order Allow,Deny
+    Deny from all
+</Files>
